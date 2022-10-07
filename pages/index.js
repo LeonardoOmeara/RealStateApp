@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import picc from '../public/images/pic1.jpg';
+// import picc from '../public/images/rent1.jpg';
+// import housepic from '../public/images/house1.jpg';
 import { Flex, Box, Text, Button } from "@chakra-ui/react";
 
 
@@ -45,20 +46,29 @@ const Banner = ({
 
 export default function Home() {
   return (
-    <div>
+    <div back>
       <h1>Hello World</h1>
       <Banner
-        purpose="RENT A HOUSE"
+        purpose="RENT a house"
         title1="Rental Houses for"
         title2="Everyone"
         desc1="Explore Home Apartments Villas"
         desc2="and more"
         buttonText="Explore renting"
         linkName="/search?purpose=for-rent"
-        imageUrl = {picc}
+        imageUrl = {"https://img.freepik.com/free-photo/gray-sofa-white-living-room_43614-796.jpg?w=740&t=st=1665109220~exp=1665109820~hmac=fbe3d46c08818235fc3759c57583009017b8df8a9ef1df4ec4595279acc6620e"}
+      />
+      <Banner
+        purpose="BUY a house"
+        title1="Find what"
+        title2="you really want!"
+        desc1="Explore Home Apartments Villas"
+        desc2="and more"
+        buttonText="Explore renting"
+        linkName="/search?purpose=for-rent"
+        imageUrl = {"https://img.freepik.com/free-photo/house-isolated-field_1303-23773.jpg?w=740&t=st=1665108549~exp=1665109149~hmac=2dcbe5a779b1dd857389561b7b3b370b17ed7de607adf02074304401651cf9d5"}        
 
       />
-      
       {/* <Banner
       /> */}
       {/* <Banner 
