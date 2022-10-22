@@ -2,7 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 // import picc from '../public/images/rent1.jpg';
 // import housepic from '../public/images/house1.jpg';
-import { Flex, Box, Text, Button } from "@chakra-ui/react";
+import { Flex, Box, Text, Button, color } from "@chakra-ui/react";
+import { url, fetchApi} from '../utilities/fetchApi';
 
 
 
@@ -46,7 +47,7 @@ const Banner = ({
 
 export default function Home() {
   return (
-    <div back>
+    <Box>
       <h1>Hello World</h1>
       <Banner
         purpose="RENT a house"
@@ -58,6 +59,9 @@ export default function Home() {
         linkName="/search?purpose=for-rent"
         imageUrl = {"https://img.freepik.com/free-photo/gray-sofa-white-living-room_43614-796.jpg?w=740&t=st=1665109220~exp=1665109820~hmac=fbe3d46c08818235fc3759c57583009017b8df8a9ef1df4ec4595279acc6620e"}
       />
+      <Flex flexWrap="wrap">
+        {/* fetch the properties and map over them*/}
+      </Flex>
       <Banner
         purpose="BUY a house"
         title1="Find what"
@@ -73,6 +77,6 @@ export default function Home() {
       /> */}
       {/* <Banner 
         purpose={'For rent'}/> */}
-    </div>
+    </Box>
   );
 }
